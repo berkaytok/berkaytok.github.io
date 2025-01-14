@@ -1,1 +1,0 @@
-# berkaytok.github.io
