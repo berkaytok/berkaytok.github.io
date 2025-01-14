@@ -1,8 +1,0 @@
-title: Berkay Tok
-description: Portfolio
-baseurl: ""
-url: "https://berkaytok.github.io"
-repository: berkaytok/berkaytok.github.io
-theme: minima
-plugins:
-  - jekyll-feed
