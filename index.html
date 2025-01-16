@@ -20,6 +20,7 @@
             padding-bottom: 1rem;
             margin-bottom: 2rem;
         }
+        
         h1 {
             font-weight: bold;
             text-transform: uppercase;
@@ -60,6 +61,29 @@
             color: white;
         }
 
+        nav {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            border-bottom: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid white;
+        }
+
+        nav a:hover {
+            background: white;
+            color: black;
+        }
+
+        .music-container {
+            margin: 2rem 0;
+            border: 2px solid white;
+            padding: 1rem;
+        }
+
         @media (max-width: 600px) {
             body {
                 margin: 1rem;
@@ -70,14 +94,30 @@
 <body>
     <header>
         <h1>Berkay Tok</h1>
-        <p>Interdisciplinary Composer</p>
+        <p>Interdisciplinary Creative</p>
     </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#music">Music</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <main>
         <section id="about">
             <h2>About</h2>
             <p>I am an interdisciplinay composer and programmer based in Charlottesville, Virginia. 
                 Website is under construction.</p>
+        </section>
+
+        <section id="music">
+            <h2>Music</h2>
+            <div class="music-container">
+                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" 
+                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/berkaytok&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+            </iframe>
+            </div>
         </section>
 
         <section id="projects">
@@ -89,6 +129,20 @@
                     Your browser does not support the video tag.
                 </video>
                 <p>An interactive study of simulating watershed accmulation using Processing and SuperCollider.</p>
+                <a href="#">View Project →</a>
+            </div>
+
+            <div class="project">
+                <h3>Sound Installation</h3>
+                <img src="path-to-your-image.jpg" alt="Sound Installation Project">
+                <p>An immersive sound installation exploring spatial audio and interactive soundscapes.</p>
+                <a href="#">View Project →</a>
+            </div>
+
+            <div class="project">
+                <h3>Interactive Performance</h3>
+                <img src="path-to-your-image.jpg" alt="Interactive Performance">
+                <p>A live performance combining real-time audio processing and visual elements.</p>
                 <a href="#">View Project →</a>
             </div>
         </section>
